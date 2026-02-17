@@ -179,8 +179,6 @@ nav a.active {
   box-shadow:
     0 0 0 4px rgba(0, 212, 255, 0.9),
     0 20px 45px rgba(0, 212, 255, 0.35);
-
-  background: radial-gradient(circle at top, #00d4ff, #7a5fff);
 }
 
 .profile-img {
@@ -345,6 +343,7 @@ footer {
     display: none;
   }
 }
+
 
 
 
