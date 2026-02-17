@@ -12,7 +12,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Container and Sections */
+/* ---------- Container & Sections ---------- */
 .container {
   width: 90%;
   max-width: 1100px;
@@ -41,7 +41,6 @@ header {
   background: rgba(20, 20, 30, 0.85);
   backdrop-filter: blur(10px);
   z-index: 999;
-  transition: background 0.3s ease;
   box-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
@@ -77,7 +76,7 @@ header {
   color: #aaa;
 }
 
-/* Navbar */
+/* ---------- Navbar ---------- */
 nav ul {
   display: flex;
   list-style: none;
@@ -87,16 +86,15 @@ nav ul {
 nav a {
   color: #ddd;
   text-decoration: none;
-  transition: color 0.3s ease;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover {
   color: #00d4ff;
 }
 
-/* CTA Button */
+/* ---------- CTA Button ---------- */
 .cta {
   background: linear-gradient(45deg, #00d4ff, #7a5fff);
   color: #fff;
@@ -134,8 +132,8 @@ nav a.active {
 
 .bio {
   margin: 15px 0 25px;
-  color: #ccc;
   font-size: 17px;
+  color: #ccc;
 }
 
 .hero-buttons {
@@ -150,7 +148,7 @@ nav a.active {
   text-decoration: none;
   color: #00d4ff;
   font-weight: 600;
-  transition: all 0.3s;
+  transition: 0.3s;
 }
 
 .btn-primary {
@@ -162,36 +160,39 @@ nav a.active {
   transform: scale(1.05);
 }
 
-
-/* ---------- Profile Card (Improved) ---------- */
+/* ---------- Profile Card (FINAL FIXED) ---------- */
 .profile-card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Photo wrapper */
 .profile-photo {
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
+  background: #fff;
 
   box-shadow:
-    0 0 0 4px rgba(0, 212, 255, 0.9),
-    0 20px 45px rgba(0, 212, 255, 0.35);
+    0 0 0 4px rgba(0, 212, 255, 0.8),
+    0 15px 35px rgba(0, 212, 255, 0.35);
 }
 
+/* Image fix */
 .profile-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
+  object-position: center top;
+  display: block;
 }
+
+/* ---------- Social Links ---------- */
 .social-links {
   margin-top: 20px;
   display: flex;
-  justify-content: center;
   gap: 15px;
 }
 
@@ -207,8 +208,8 @@ nav a.active {
 
 /* ---------- Glass Cards ---------- */
 .card.glass {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
   border-radius: 15px;
   padding: 25px;
   backdrop-filter: blur(12px);
@@ -265,7 +266,6 @@ nav a.active {
   border-radius: 12px;
   padding: 15px;
   font-weight: 600;
-  transition: 0.3s;
 }
 
 .skill i {
@@ -273,10 +273,6 @@ nav a.active {
   font-size: 28px;
   margin-bottom: 8px;
   color: #00d4ff;
-}
-
-.skill:hover {
-  background: rgba(0,212,255,0.2);
 }
 
 /* ---------- Projects ---------- */
@@ -299,29 +295,25 @@ nav a.active {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   margin-bottom: 15px;
   padding: 12px;
-  border: none;
   border-radius: 8px;
+  border: none;
   background: rgba(255,255,255,0.1);
   color: #fff;
 }
 
 form .submit {
   background: linear-gradient(45deg, #00d4ff, #7a5fff);
-  color: white;
-  padding: 12px;
   border: none;
+  padding: 12px;
   border-radius: 25px;
-  cursor: pointer;
+  color: #fff;
   font-weight: 600;
-  transition: 0.3s;
-}
-
-form .submit:hover {
-  transform: scale(1.05);
+  cursor: pointer;
 }
 
 /* ---------- Footer ---------- */
@@ -330,7 +322,6 @@ footer {
   padding: 30px 0;
   text-align: center;
   color: #999;
-  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 /* ---------- Responsive ---------- */
@@ -339,15 +330,12 @@ footer {
     text-align: center;
   }
 
+  .profile-photo {
+    width: 160px;
+    height: 160px;
+  }
+
   nav ul {
     display: none;
   }
 }
-
-
-
-
-
-
-
-
