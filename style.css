@@ -169,8 +169,8 @@ nav a:hover {
 
 /* Photo wrapper */
 .profile-photo {
-  width: 200px;
-  height: 200px;
+  width: 374px;
+  height: 387px;
   border-radius: 50%;
   overflow: hidden;
   background: #fff;
@@ -339,3 +339,4 @@ footer {
     display: none;
   }
 }
+
